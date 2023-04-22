@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'simple-import-sort',
   ],
   rules: {
     quotes: [2, 'single'],
@@ -37,5 +38,7 @@ module.exports = {
     'react/react-in-jsx-scope': [0],
     'semi-spacing': [2, { before: false, after: true }],
     'no-else-return': [2],
+    '@typescript-eslint/consistent-type-definitions': [2, 'type'],
+    'simple-import-sort/imports': [2],
   },
 };
