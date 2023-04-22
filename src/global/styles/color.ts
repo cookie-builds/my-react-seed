@@ -23,12 +23,24 @@ export default {
   secondaryTextLight: '',
   secondaryTextLighter: '',
 
+  tertiary: '',
+  tertiaryDark: '',
+  tertiaryDarker: '',
+  tertiaryLight: '',
+  tertiaryLighter: '',
+
+  tertiaryText: '',
+  tertiaryTextDark: '',
+  tertiaryTextDarker: '',
+  tertiaryTextLight: '',
+  tertiaryTextLighter: '',
+
   background: '',
   backgroundDark: '',
   backgroundDarker: '',
   backgroundLight: '',
   backgroundLighter: '',
 
-  white: '',
-  black: '',
+  white: '#ffffff',
+  black: '#000000',
 }
