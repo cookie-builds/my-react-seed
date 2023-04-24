@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Root = (): JSX.Element => {
   return (
     <div>Root</div>
-  )
-}
+  );
+};
 
-export default Root
+export default Root;
