@@ -2,8 +2,8 @@ import { css } from 'styled-components';
 
 export const color = {
   text: '',
-  white: '',
-  black: '',
+  white: '#FFFFFF',
+  black: '#000000',
   medium: '',
   light: '',
   transparent: 'transparent',
@@ -27,14 +27,19 @@ export const color = {
 };
 
 export const screenSize = {
-  small: '30rem',
-  medium: '48rem',
-  large: '64rem',
-  extraLarge: '75rem',
-  huge: '120rem',
+  extraSmall: '30rem',
+  small: '48rem',
+  medium: '64rem',
+  large: '75rem',
+  extraLarge: '120rem',
 };
 
 export const mediaQuery = {
+  extraSmall: (...args: any) => css`
+    @media only screen and (min-width: ${screenSize.small}) {
+      ${css(args)}
+    }
+  `,
   small: (...args: any) => css`
     @media only screen and (min-width: ${screenSize.small}) {
       ${css(args)}
@@ -55,11 +60,6 @@ export const mediaQuery = {
       ${css(args)}
     }
   `,
-  huge: (...args: any) => css`
-    @media only screen and (min-width: ${screenSize.huge}) {
-      ${css(args)}
-    }
-  `,
 };
 
 export const fontWeight = {
@@ -70,30 +70,57 @@ export const fontWeight = {
   black: 800,
 };
 
-export const textSize = {
-  p: () => css`
+export const fontSize = {
+  extraSmall: () => css`
     font-weight: ${fontWeight.book};
     line-height: 1;
-    font-size: 1rem;
+    font-size: 0.875rem;
     
+    ${mediaQuery.extraSmall`
+      font-size: 0.875rem;
+    `}
     ${mediaQuery.small`
-      font-size: 1.0625rem;
+      font-size: 0.875rem;
     `}
     ${mediaQuery.medium`
-      font-size: 1.0625rem;
+      font-size: 0.875rem;
     `}
     ${mediaQuery.large`
-      font-size: 1.125rem;
+      font-size: 0.875rem;
     `}
     ${mediaQuery.extraLarge`
-      font-size: 1.125rem;
+      font-size: 0.875rem;
     `}
   `,
-  subtitle: () => css`
+  small: () => css`
     font-weight: ${fontWeight.medium};
     line-height: 1;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
+    ${mediaQuery.extraSmall`
+      font-size: 1rem;
+    `}
+    ${mediaQuery.small`
+      font-size: 1rem;
+    `}
+    ${mediaQuery.medium`
+      font-size: 1rem;
+    `}
+    ${mediaQuery.large`
+      font-size: 1rem;
+    `}
+    ${mediaQuery.extraLarge`
+      font-size: 1rem;
+    `}
+  `,
+  medium: () => css`
+    font-weight: ${fontWeight.bold};
+    line-height: 1;
+    font-size: 1.5rem;
+
+    ${mediaQuery.extraSmall`
+      font-size: 1.5rem;
+    `}
     ${mediaQuery.small`
       font-size: 1.5rem;
     `}
@@ -101,52 +128,56 @@ export const textSize = {
       font-size: 1.5rem;
     `}
     ${mediaQuery.large`
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     `}
     ${mediaQuery.extraLarge`
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     `}
   `,
-  title: () => css`
-    font-weight: ${fontWeight.bold};
+  large: () => css`
+    font-weight: ${fontWeight.black};
     line-height: 1;
     font-size: 2rem;
 
+    ${mediaQuery.extraSmall`
+      font-size: 2rem;
+    `}
     ${mediaQuery.small`
-      font-size: 2.25rem;
+      font-size: 2rem;
     `}
     ${mediaQuery.medium`
-      font-size: 2.25rem;
+      font-size: 2rem;
     `}
     ${mediaQuery.large`
-      font-size: 2.5rem;
+      font-size: 2rem;
     `}
     ${mediaQuery.extraLarge`
-      font-size: 2.5rem;
+      font-size: 2rem;
     `}
   `,
-  huge: () => css`
+  extraLarge: () => css`
     font-weight: ${fontWeight.black};
     line-height: 1;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 
+    ${mediaQuery.extraSmall`
+      font-size: 3.5rem;
+    `}
     ${mediaQuery.small`
-      font-size: 2.75rem;
+      font-size: 3.5rem;
     `}
     ${mediaQuery.medium`
-      font-size: 2.75rem;
+      font-size: 3.5rem;
     `}
     ${mediaQuery.large`
-      font-size: 3rem;
+      font-size: 3.5rem;
     `}
     ${mediaQuery.extraLarge`
-      font-size: 3rem;
+      font-size: 3.5rem;
     `}
   `,
 };
 
-export const spacing = { xs: '0.25rem', sm: '0.5rem', md: '1rem', lg: '1.5rem', xl: '2rem' };
-
-export const borderWidth = { sm: '1px', md: '2px' };
+export const borderWidth = { sm: '1px', md: '2px', lg: '4px' };
 
 export const fontFamily = { default: 'Poppins', special: 'Roboto Mono' };
