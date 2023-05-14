@@ -1,4 +1,5 @@
 import './App.css';
+import './app/global.css';
 
 import * as React from 'react';
 import {

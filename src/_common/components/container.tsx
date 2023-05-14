@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { mediaQuery, spacing } from '../../global/style';
+import { mediaQuery, spacing } from '../../app/styling';
 
 export default styled.div`
   margin: ${spacing.sm} auto;
