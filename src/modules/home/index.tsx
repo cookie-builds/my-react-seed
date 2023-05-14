@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const StyledHome = styled.div`
-`;
+import { StandardContainer, StandardText } from '../../_common/components/standard';
 
 const Home = (): JSX.Element => (
-  <StyledHome>Home</StyledHome>
+  <StandardContainer>
+    <StandardText $size='L'>New standard text</StandardText>
+  </StandardContainer>
 );
 
 export default Home;
