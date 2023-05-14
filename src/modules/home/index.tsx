@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { StandardContainer, StandardText } from '../../_common/components/standard';
+/* TODO: Delete content and create own home page */
 
 const Home = (): JSX.Element => (
   <StandardContainer>

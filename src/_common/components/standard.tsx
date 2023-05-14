@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import { color, fontSize, mediaQuery } from '../../app/styling';
 
+/* TODO: Setup standard components */
+
 export const StandardContainer = styled.div`
   width: 100%;
   margin: 2rem 0;
