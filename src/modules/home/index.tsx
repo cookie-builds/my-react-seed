@@ -1,12 +1,11 @@
 import React from 'react';
 
-import { StandardContainer, StandardText } from '../../_common/components/standard';
-/* TODO: Delete content and create own home page */
+import Page from '../../_common/components/page';
 
 const Home = (): JSX.Element => (
-  <StandardContainer>
-    <StandardText $size='L'>New standard text</StandardText>
-  </StandardContainer>
+  <Page>
+    Home
+  </Page>
 );
 
 export default Home;
