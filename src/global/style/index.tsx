@@ -148,3 +148,5 @@ export const textSize = {
 export const spacing = { xs: '0.25rem', sm: '0.5rem', md: '1rem', lg: '1.5rem', xl: '2rem' };
 
 export const borderWidth = { sm: '1px', md: '2px' };
+
+export const fontFamily = { default: 'Poppins', special: 'Roboto Mono' };
