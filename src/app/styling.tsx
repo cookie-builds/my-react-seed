@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 
+/* TODO: Customize styling */
+
 export const color = {
   text: '',
   white: '#FFFFFF',

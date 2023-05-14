@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* TODO: Create footer */
+
 const FooterContainer = styled.div`
   position: relative;
   padding: 2rem 0;

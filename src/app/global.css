@@ -1,4 +1,6 @@
 /* TODO: Setup body */
+/* TODO: Add fonts in ./fonts and add @font-face here, or delete folder if not necessary */
+
 body {
   background-color: rgb(255, 255, 255);
 }
